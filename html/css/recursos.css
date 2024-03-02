@@ -1,0 +1,302 @@
+/* nav  */
+.navbar-nav .nav-link,
+    .navbar-nav .dropdown-toggle,
+    .dropdown-menu {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+.navbar-nav .nav-link:hover {
+    color: #0b72e0;
+  }
+
+  .navbar-nav .dropdown:hover .nav-link {
+    color: #0b72e0;
+  }
+
+  .navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #0b72e0;
+  }
+
+  .navbar-nav .nav-link.disabled:hover {
+    cursor: not-allowed;
+  }
+  /* fin nav  */
+
+
+
+/*
+---------------------------------------------
+popular categories
+---------------------------------------------
+*/ 
+
+
+
+
+
+section.popular-categories {
+  padding: 90px 95px;
+}
+
+section.popular-categories .main-button {
+  text-align: right;
+}
+
+.popular-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.popular-item .top-content {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.popular-item .icon {
+  background-color: #f7f7f7;
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.popular-item .icon img {
+  max-width: 36px;
+  border-radius: 0px;
+}
+
+.popular-item h4 {
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.popular-item span em {
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 8px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #00bdfe;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+  margin-right: 10px;
+}
+
+.popular-item span {
+  color: #afafaf;
+  font-weight: 400;
+}
+
+.popular-item img {
+  border-radius: 15px;
+}
+
+.popular-item .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.popular-item .thumb span.category {
+  font-size: 15px;
+  color: #00bdfe;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: -60px;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.popular-item .thumb span.likes {
+  font-size: 15px;
+  color: #00bdfe;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  position: absolute;
+  right: 15px;
+  top: -60px;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.popular-item .thumb:hover span.category,
+.popular-item .thumb:hover span.likes {
+  top: 15px;
+  opacity: 1;
+}
+
+.popular-item .border-button {
+  margin-top: 30px;
+  border-radius: 10%;
+  justify-content: none;
+}
+
+.popular-item .border-button a {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* footer  */
+/* logo girando */
+
+.logo img {
+  background-size    : cover;
+  background-position: left;
+  width              : 150px;
+  height             : 150px;
+  animation          : rotar 5s linear infinite;
+
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(-180deg);
+  }
+
+
+}.mb-4.text-center a.btn.btn-outline-dark.btn-floating {
+  transition: background-color 0.3s ease;
+}
+
+.mb-4.text-center a.btn.btn-outline-dark.btn-floating:hover {
+  background-color: #0b72e0; /* Azul claro */
+}
+
+
+
+/* Estilos para el footer */
+.footer {
+  /* Ajusta los estilos según sea necesario */
+  padding: 30px 0;
+  background-color: #343a40;
+  color: #fff;
+}
+
+
+/* adpacion movil  */
+/* Estilos adicionales */
+.navbar-brand img {
+  max-width: 100px; /* Tamaño máximo del logo */
+  height: auto;
+}
+
+/* Estilos para la sección de los Podcats */
+.popular-categories {
+  padding: 50px 0; /* Ajusta el padding según tu preferencia */
+}
+
+.popular-categories .main-button {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre el texto y el botón */
+}
+
+.popular-item {
+  margin-bottom: 40px; /* Espacio entre los elementos de Podcats */
+}
+
+.popular-item .thumb {
+  position: relative;
+}
+
+.popular-item .thumb img {
+  width: 100%;
+  height: auto;
+}
+
+.popular-item .category {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+/* footer  */
+/* logo girando */
+
+.logo img {
+    background-size    : cover;
+    background-position: left;
+    width              : 150px;
+    height             : 150px;
+    animation          : rotar 5s linear infinite;
+  
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+  }
+  
+  @keyframes rotar {
+    from {
+      transform: rotateY(180deg);
+    }
+  
+    to {
+      transform: rotateY(-180deg);
+    }
+  
+  
+  }.mb-4.text-center a.btn.btn-outline-dark.btn-floating {
+    transition: background-color 0.3s ease;
+  }
+  
+  .mb-4.text-center a.btn.btn-outline-dark.btn-floating:hover {
+    background-color: #0b72e0; /* Azul claro */
+  }
+  }
