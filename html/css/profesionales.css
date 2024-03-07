@@ -257,12 +257,12 @@
     z-index: -1;
     opacity: 0;
     transform: translateX(50px);
-    background-color: #fff;
+    background-color: #ffffff5e;
     position: absolute;
     list-style: none;
     transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 15px rgba(7, 181, 4, 0.634);
     padding: 40px;
   }
   
@@ -307,7 +307,7 @@
   }
   
   section.our-team ul.nacc li .left-content span a:hover {
-    color: #dc8cdb;
+    color: #226fe4;
   }
   
   section.our-team ul.nacc li .left-content .last-span a {
@@ -425,7 +425,6 @@
   section.featured-product:after {
     position: absolute;
     content: '';
-    background-image: url(../images/testimonials-right-dec.png);
     right: 0px;
     bottom: -140px;
     width: 632px;
@@ -521,8 +520,8 @@
       font-size: 62px;
     }
     .header-area {
-      background: rgb(219,138,222) !important;
-      background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+      background: rgb(40, 102, 237) !important;
+      background: linear-gradient(-145deg, rgb(28, 83, 233) 0%, rgba(246,191,159,1) 100%) !important;
     }
     .services .owl-nav .owl-next{
       right: -70px;
@@ -664,7 +663,7 @@
       margin: 0px 5px;
     }
     section.our-team .naccs .menu div.active img {
-      border: 3px solid #dc8cdb;
+      border: 3px solid #1e6ee7;
     }
     section.our-team .naccs .menu div h4,
     section.our-team .naccs .menu div span {

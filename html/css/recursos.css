@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+}
+
+
 /* nav  */
 .navbar-nav .nav-link,
     .navbar-nav .dropdown-toggle,
@@ -33,9 +42,9 @@ popular categories
 
 
 
-section.popular-categories {
-  padding: 90px 95px;
-}
+ section.popular-categories {
+  padding: 90px 9px;
+} 
 
 section.popular-categories .main-button {
   text-align: right;
@@ -148,6 +157,185 @@ section.popular-categories .main-button {
 }
 
 
+/* imagenes giratorias  */
+
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 15%;
+  font-size: 45%;
+}
+
+.cardBoxContainer {
+  overflow: hidden;
+}
+.cardBox {
+  float: left;
+  font-size: 1.8em;
+  margin: 1% 0 0 1%;
+  margin-bottom: 3%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+
+}
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  background:rgba(32, 172, 247, 0.589);
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+
+  
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* imagen  */
+.front img {
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.back {
+  transform: rotateY( 180deg);
+}
+
+h1 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+}
+ 
+p {
+  margin-bottom: 1.8em;
+}
+ 
+
+ 
+
+a:hover {
+  color: #237206;
+  text-shadow: 0 0 1px #0d8eea;
+}
+
+
+.cardBox:nth-child(1) .card .back {
+  background: cornflowerblue;
+}
+ 
+.cardBox:nth-child(2) .card .back {
+  background: orange;
+}
+ 
+.cardBox:nth-child(3) .card .back {
+  background: yellowgreen;
+}
+ 
+.cardBox:nth-child(4) .card .back {
+  background: tomato;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+ 
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+ 
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+
+  .card {
+    height: 285px;
+  }
+
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .cardBox {
+    width: 94.5%;
+    height: 290px;
+  }
+
+}
+
+/* fin imagenes  */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer  */
 /* logo girando */
 
@@ -187,7 +375,7 @@ section.popular-categories .main-button {
 /* Estilos para el footer */
 .footer {
   /* Ajusta los estilos según sea necesario */
-  padding: 30px 0;
+  padding: 100px 10px;
   background-color: #343a40;
   color: #fff;
 }
@@ -231,7 +419,6 @@ section.popular-categories .main-button {
   padding: 5px 10px;
   border-radius: 5px;
   color: white;
-
 
 
 
